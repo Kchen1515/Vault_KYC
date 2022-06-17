@@ -8,7 +8,7 @@ const Layout = ({children}) => {
   return (
     <div className='layout'>
       <Head >
-        <title>Rythmn</title>
+        <title>Vault KYC</title>
       </Head>
       <header>
         <Navbar/>
