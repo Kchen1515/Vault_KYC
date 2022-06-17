@@ -65,8 +65,9 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: #f02d34;
   font-size: 18px;
+  font-weight: 900;
 
 }
 .cart-icon{
@@ -167,8 +168,10 @@ width: 100%;
 .hero-banner-image{
   position: absolute;
   top: 10%;
-  left:40%;
-  width: 600px;
+
+  right: 10px;
+  width: 400px;
+  border-radius: 25px;
   
 }
 
@@ -299,6 +302,7 @@ text-align: end;
   align-items: center;
   gap: 10px;
   justify-content: center;
+  
 
 }
 .footer-container .icons{
@@ -430,7 +434,7 @@ padding: 30px 65px;
    background-color: #ebebeb;
 
   width: 400px;
-  height: 400px;
+ 
   cursor: pointer;
   transition: .3s ease-in-out;
 }
@@ -629,6 +633,7 @@ margin-top: 160px;
     height: 62%;
     top: -2%;
     right: -6%;
+    display: none;
   }
   .footer-banner-container{
     height: 560px;
