@@ -5,11 +5,11 @@ import  Product  from '../../components/Product'
 import { useState } from 'react'
 import { useStateContext } from '../../context/StateContext'
 
-const ProductDetail = ({ product, products}) => {
+const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price} = product
     const [index, setIndex] = useState(0)
-    const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext
+    const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
 
     const handleBuyNow = () => {
         onAdd(product, qty);
@@ -112,4 +112,4 @@ export const getStaticProps = async ({ params: { slug } }) => {
       props: {products, product}
     }
 }
-export default ProductDetail
+export default ProductDetails

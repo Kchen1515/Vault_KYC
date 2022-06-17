@@ -2,9 +2,9 @@ import React from 'react'
 import { Product, FooterBanner, HeroBanner } from '../components'
 import { client } from '../lib/client'
 
-const Home = ({products, bannerData}) => {
-  return (
-    <>
+const Home = ({products, bannerData}) => (
+
+    <div>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       {console.log(bannerData)}
       <div className='products-heading'>
@@ -16,9 +16,9 @@ const Home = ({products, bannerData}) => {
       </div>
 
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
-    </>
-  )
-}
+    </div>
+  
+)
 
 export const getServerSideProps = async () => {
   const query = '*[_type == "product" ]'
